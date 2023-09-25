@@ -1,3 +1,4 @@
+import Footer from '../components/Footer';
 import Header from '../components/Header';
 import './globals.css';
 import { Jost, Manrope } from 'next/font/google';
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
 			>
 				<Header />
 				{children}
+				<Footer />
 			</body>
 		</html>
 	);

@@ -1,6 +1,6 @@
 import BlogDetails from '@/src/components/Blog/Details';
 import RenderMdx from '@/src/components/Blog/MarkdownRenderer';
-// import Tag from '@/src/components/Elements/Tag';
+import Tag from '@/src/components/Tag';
 import siteMetadata from '@/src/utils/siteMetaData';
 import { allBlogs } from 'contentlayer/generated';
 import { slug } from 'github-slugger';
@@ -93,11 +93,11 @@ export default function BlogPage({ params }) {
 			<article>
 				<div className='mb-8 text-center relative w-full h-[70vh] bg-dark'>
 					<div className='absolute z-10 flex flex-col items-center justify-center w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'>
-						{/* <Tag
+						<Tag
 							name={blog.tags[0]}
 							link={`/categories/${slug(blog.tags[0])}`}
 							className='px-6 py-2 text-sm'
-						/> */}
+						/>
 						<h1 className='inline-block mt-6 font-semibold capitalize text-light text-2xl md:text-3xl lg:text-5xl !leading-normal relative w-5/6'>
 							{blog.title}
 						</h1>
