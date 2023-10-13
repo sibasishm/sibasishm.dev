@@ -126,7 +126,7 @@ export default function BlogPage({ params }) {
 							<summary className='text-lg font-semibold capitalize cursor-pointer'>
 								Table Of Content
 							</summary>
-							<ul className='mt-4 text-base font-jost'>
+							<ul className='mt-4 text-base'>
 								{blog.toc.map(heading => {
 									return (
 										<li key={`#${heading.slug}`} className='py-1'>
@@ -134,7 +134,7 @@ export default function BlogPage({ params }) {
 												href={`#${heading.slug}`}
 												data-level={heading.level}
 												className='data-[level=two]:pl-0  data-[level=two]:pt-2
-                                       data-[level=two]:border-t border-solid border-dark/40
+                                       data-[level=two]:border-t border-solid border-gray
                                        data-[level=three]:pl-4
                                        sm:data-[level=three]:pl-6
                                        flex items-center justify-start

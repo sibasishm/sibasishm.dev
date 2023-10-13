@@ -22,7 +22,7 @@ const BlogLayout = ({ blog, variant }) => {
 					width={blog.image.width}
 					height={blog.image.height}
 					className='object-cover object-center w-full h-full transition-all duration-300 rounded-xl group-hover:scale-105 ease'
-					sizes='(max-width: 1180px) 100vw, 50vw'
+					// sizes='(max-width: 1180px) 100vw, 50vw'
 				/>
 
 				<div className='absolute bottom-0 z-20 w-full p-4 xs:p-6 sm:p-10'>
@@ -41,6 +41,9 @@ const BlogLayout = ({ blog, variant }) => {
 							</span>
 						</h2>
 					</Link>
+					<span className='inline-block w-full mt-1 text-xs font-semibold capitalize text-lightOffset sm:text-base'>
+						{format(new Date(blog.publishedAt), 'MMMM dd, yyyy')}
+					</span>
 				</div>
 			</div>
 		);
@@ -61,7 +64,7 @@ const BlogLayout = ({ blog, variant }) => {
 						width={blog.image.width}
 						height={blog.image.height}
 						className='object-cover object-center w-full h-full transition-all duration-300 aspect-square group-hover:scale-105 ease'
-						sizes='(max-width: 640px) 100vw,(max-width: 1024px) 50vw, 33vw'
+						// sizes='(max-width: 640px) 100vw,(max-width: 1024px) 50vw, 33vw'
 					/>
 				</Link>
 
@@ -100,7 +103,7 @@ const BlogLayout = ({ blog, variant }) => {
 						width={blog.image.width}
 						height={blog.image.height}
 						className=' aspect-[4/3] w-full h-full object-cover object-center  group-hover:scale-105 transition-all ease duration-300 '
-						sizes='(max-width: 640px) 100vw,(max-width: 1024px) 50vw, 33vw'
+						// sizes='(max-width: 640px) 100vw,(max-width: 1024px) 50vw, 33vw'
 					/>
 				</Link>
 

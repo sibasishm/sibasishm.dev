@@ -76,7 +76,7 @@ const Blog = defineDocumentType(() => ({
 }));
 
 const codeOptions = {
-	theme: 'github-dark',
+	theme: 'monokai',
 	grid: false,
 };
 
