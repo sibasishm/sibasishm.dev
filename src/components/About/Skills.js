@@ -17,7 +17,7 @@ const SkillList = [
 const Skills = () => {
 	return (
 		<section className='flex flex-col w-full p-5 border-b-2 border-solid xs:p-10 sm:p-12 md:p-16 lg:p-20 border-dark dark:border-light text-dark dark:text-light'>
-			<span className='text-lg font-semibold sm:text-3xl md:text-4xl text-accent dark:text-accentDark'>
+			<span className='text-lg font-semibold sm:text-3xl md:text-4xl text-primary dark:text-secondary'>
 				I'm comfortable in...
 			</span>
 			<ul className='flex flex-wrap justify-center mt-8 xs:justify-start'>
